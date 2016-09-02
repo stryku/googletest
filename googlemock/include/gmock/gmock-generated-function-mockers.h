@@ -702,73 +702,73 @@ using internal::FunctionMocker;
 
 
 
-#define GMOCK_NON_MOVABLE_FUNCTION0(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(0, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION1(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(1, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION2(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(2, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION3(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(3, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION4(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(4, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION5(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(5, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION6(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(6, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION7(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(7, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION8(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(8, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION9(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(9, \
-    const, m)
-#define GMOCK_NON_MOVABLE_FUNCTION10(m, const, \
-    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(10, \
-    const, m)
+#define GMOCK_NON_MOVABLE_FUNCTION0(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(0, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION1(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(1, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION2(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(2, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION3(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(3, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION4(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(4, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION5(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(5, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION6(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(6, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION7(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(7, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION8(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(8, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION9(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(9, ct, \
+    m)
+#define GMOCK_NON_MOVABLE_FUNCTION10(m, ct, \
+    ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_(10, ct, \
+    m)
 
-#define GMOCK_MOVABLE_FUNCTION0(m, const, \
+#define GMOCK_MOVABLE_FUNCTION0(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(0, const, m)
-#define GMOCK_MOVABLE_FUNCTION1(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(0, ct, m)
+#define GMOCK_MOVABLE_FUNCTION1(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(1, const, m)
-#define GMOCK_MOVABLE_FUNCTION2(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(1, ct, m)
+#define GMOCK_MOVABLE_FUNCTION2(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(2, const, m)
-#define GMOCK_MOVABLE_FUNCTION3(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(2, ct, m)
+#define GMOCK_MOVABLE_FUNCTION3(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(3, const, m)
-#define GMOCK_MOVABLE_FUNCTION4(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(3, ct, m)
+#define GMOCK_MOVABLE_FUNCTION4(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(4, const, m)
-#define GMOCK_MOVABLE_FUNCTION5(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(4, ct, m)
+#define GMOCK_MOVABLE_FUNCTION5(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(5, const, m)
-#define GMOCK_MOVABLE_FUNCTION6(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(5, ct, m)
+#define GMOCK_MOVABLE_FUNCTION6(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(6, const, m)
-#define GMOCK_MOVABLE_FUNCTION7(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(6, ct, m)
+#define GMOCK_MOVABLE_FUNCTION7(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(7, const, m)
-#define GMOCK_MOVABLE_FUNCTION8(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(7, ct, m)
+#define GMOCK_MOVABLE_FUNCTION8(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(8, const, m)
-#define GMOCK_MOVABLE_FUNCTION9(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(8, ct, m)
+#define GMOCK_MOVABLE_FUNCTION9(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(9, const, m)
-#define GMOCK_MOVABLE_FUNCTION10(m, const, \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(9, ct, m)
+#define GMOCK_MOVABLE_FUNCTION10(m, ct, \
     ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(10, const, m)
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_(10, ct, m)
 
 #define MOCK_METHOD0(m, ...) GMOCK_METHOD0_(, , , m, \
     GMOCK_NON_MOVABLE_FUNCTION0( m, , __VA_ARGS__), __VA_ARGS__)
@@ -815,49 +815,49 @@ using internal::FunctionMocker;
 #define MOVABLE_MOCK_METHOD10(m, ...) GMOCK_METHOD10_(, , , m, \
     GMOCK_MOVABLE_FUNCTION10( m, ,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD0(m, ...) GMOCK_METHOD0_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION0( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION0( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD1(m, ...) GMOCK_METHOD1_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION1( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION1( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD2(m, ...) GMOCK_METHOD2_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION2( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION2( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD3(m, ...) GMOCK_METHOD3_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION3( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION3( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD4(m, ...) GMOCK_METHOD4_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION4( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION4( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD5(m, ...) GMOCK_METHOD5_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION5( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION5( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD6(m, ...) GMOCK_METHOD6_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION6( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION6( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD7(m, ...) GMOCK_METHOD7_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION7( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION7( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD8(m, ...) GMOCK_METHOD8_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION8( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION8( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD9(m, ...) GMOCK_METHOD9_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION9( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION9( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD10(m, ...) GMOCK_METHOD10_(, const, , m, \
-    GMOCK_NON_MOVABLE_FUNCTION10( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_NON_MOVABLE_FUNCTION10( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD0(m, ...) GMOCK_METHOD0_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION0( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION0( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD1(m, ...) GMOCK_METHOD1_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION1( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION1( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD2(m, ...) GMOCK_METHOD2_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION2( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION2( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD3(m, ...) GMOCK_METHOD3_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION3( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION3( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD4(m, ...) GMOCK_METHOD4_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION4( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION4( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD5(m, ...) GMOCK_METHOD5_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION5( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION5( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD6(m, ...) GMOCK_METHOD6_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION6( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION6( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD7(m, ...) GMOCK_METHOD7_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION7( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION7( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD8(m, ...) GMOCK_METHOD8_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION8( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION8( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD9(m, ...) GMOCK_METHOD9_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION9( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION9( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD10(m, ...) GMOCK_METHOD10_(, const, , m, \
-    GMOCK_MOVABLE_FUNCTION10( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_MOVABLE_FUNCTION10( m, const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_METHOD0_T(m, ...) GMOCK_METHOD0_(typename, , , m, \
     GMOCK_NON_MOVABLE_FUNCTION0(m, ,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_METHOD1_T(m, ...) GMOCK_METHOD1_(typename, , , m, \
@@ -903,70 +903,70 @@ using internal::FunctionMocker;
 #define MOVABLE_MOCK_METHOD10_T(m, ...) GMOCK_METHOD10_(typename, , , m, \
     GMOCK_MOVABLE_FUNCTION10(m, ,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD0_T(m, ...) \
-    GMOCK_METHOD0_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION0( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD0_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION0( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD1_T(m, ...) \
-    GMOCK_METHOD1_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION1( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD1_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION1( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD2_T(m, ...) \
-    GMOCK_METHOD2_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION2( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD2_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION2( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD3_T(m, ...) \
-    GMOCK_METHOD3_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION3( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD3_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION3( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD4_T(m, ...) \
-    GMOCK_METHOD4_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION4( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD4_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION4( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD5_T(m, ...) \
-    GMOCK_METHOD5_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION5( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD5_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION5( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD6_T(m, ...) \
-    GMOCK_METHOD6_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION6( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD6_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION6( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD7_T(m, ...) \
-    GMOCK_METHOD7_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION7( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD7_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION7( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD8_T(m, ...) \
-    GMOCK_METHOD8_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION8( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD8_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION8( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD9_T(m, ...) \
-    GMOCK_METHOD9_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION9( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD9_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION9( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD10_T(m, ...) \
-    GMOCK_METHOD10_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION10( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD10_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION10( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD0_T(m, ...) \
-    GMOCK_METHOD0_(typename, const, , m, GMOCK_MOVABLE_FUNCTION0( m, , \
+    GMOCK_METHOD0_(typename, const, , m, GMOCK_MOVABLE_FUNCTION0( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD1_T(m, ...) \
-    GMOCK_METHOD1_(typename, const, , m, GMOCK_MOVABLE_FUNCTION1( m, , \
+    GMOCK_METHOD1_(typename, const, , m, GMOCK_MOVABLE_FUNCTION1( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD2_T(m, ...) \
-    GMOCK_METHOD2_(typename, const, , m, GMOCK_MOVABLE_FUNCTION2( m, , \
+    GMOCK_METHOD2_(typename, const, , m, GMOCK_MOVABLE_FUNCTION2( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD3_T(m, ...) \
-    GMOCK_METHOD3_(typename, const, , m, GMOCK_MOVABLE_FUNCTION3( m, , \
+    GMOCK_METHOD3_(typename, const, , m, GMOCK_MOVABLE_FUNCTION3( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD4_T(m, ...) \
-    GMOCK_METHOD4_(typename, const, , m, GMOCK_MOVABLE_FUNCTION4( m, , \
+    GMOCK_METHOD4_(typename, const, , m, GMOCK_MOVABLE_FUNCTION4( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD5_T(m, ...) \
-    GMOCK_METHOD5_(typename, const, , m, GMOCK_MOVABLE_FUNCTION5( m, , \
+    GMOCK_METHOD5_(typename, const, , m, GMOCK_MOVABLE_FUNCTION5( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD6_T(m, ...) \
-    GMOCK_METHOD6_(typename, const, , m, GMOCK_MOVABLE_FUNCTION6( m, , \
+    GMOCK_METHOD6_(typename, const, , m, GMOCK_MOVABLE_FUNCTION6( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD7_T(m, ...) \
-    GMOCK_METHOD7_(typename, const, , m, GMOCK_MOVABLE_FUNCTION7( m, , \
+    GMOCK_METHOD7_(typename, const, , m, GMOCK_MOVABLE_FUNCTION7( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD8_T(m, ...) \
-    GMOCK_METHOD8_(typename, const, , m, GMOCK_MOVABLE_FUNCTION8( m, , \
+    GMOCK_METHOD8_(typename, const, , m, GMOCK_MOVABLE_FUNCTION8( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD9_T(m, ...) \
-    GMOCK_METHOD9_(typename, const, , m, GMOCK_MOVABLE_FUNCTION9( m, , \
+    GMOCK_METHOD9_(typename, const, , m, GMOCK_MOVABLE_FUNCTION9( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD10_T(m, ...) \
-    GMOCK_METHOD10_(typename, const, , m, GMOCK_MOVABLE_FUNCTION10( m, , \
+    GMOCK_METHOD10_(typename, const, , m, GMOCK_MOVABLE_FUNCTION10( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_METHOD0_WITH_CALLTYPE(ct, m, ...) \
     GMOCK_METHOD0_(, , ct, m, GMOCK_NON_MOVABLE_FUNCTION0( m, ,__VA_ARGS__), \
@@ -1035,70 +1035,70 @@ using internal::FunctionMocker;
     GMOCK_METHOD10_(, , ct, m, GMOCK_MOVABLE_FUNCTION10( m, ,__VA_ARGS__), \
         __VA_ARGS__)
 #define MOCK_CONST_METHOD0_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD0_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION0( m, , \
+    GMOCK_METHOD0_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION0( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD1_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD1_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION1( m, , \
+    GMOCK_METHOD1_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION1( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD2_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD2_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION2( m, , \
+    GMOCK_METHOD2_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION2( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD3_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD3_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION3( m, , \
+    GMOCK_METHOD3_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION3( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD4_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD4_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION4( m, , \
+    GMOCK_METHOD4_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION4( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD5_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD5_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION5( m, , \
+    GMOCK_METHOD5_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION5( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD6_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD6_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION6( m, , \
+    GMOCK_METHOD6_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION6( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD7_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD7_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION7( m, , \
+    GMOCK_METHOD7_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION7( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD8_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD8_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION8( m, , \
+    GMOCK_METHOD8_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION8( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD9_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD9_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION9( m, , \
+    GMOCK_METHOD9_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION9( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD10_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD10_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION10( m, , \
+    GMOCK_METHOD10_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION10( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD0_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD0_(, const, ct, m, GMOCK_MOVABLE_FUNCTION0( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD0_(, const, ct, m, GMOCK_MOVABLE_FUNCTION0( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD1_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD1_(, const, ct, m, GMOCK_MOVABLE_FUNCTION1( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD1_(, const, ct, m, GMOCK_MOVABLE_FUNCTION1( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD2_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD2_(, const, ct, m, GMOCK_MOVABLE_FUNCTION2( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD2_(, const, ct, m, GMOCK_MOVABLE_FUNCTION2( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD3_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD3_(, const, ct, m, GMOCK_MOVABLE_FUNCTION3( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD3_(, const, ct, m, GMOCK_MOVABLE_FUNCTION3( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD4_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD4_(, const, ct, m, GMOCK_MOVABLE_FUNCTION4( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD4_(, const, ct, m, GMOCK_MOVABLE_FUNCTION4( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD5_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD5_(, const, ct, m, GMOCK_MOVABLE_FUNCTION5( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD5_(, const, ct, m, GMOCK_MOVABLE_FUNCTION5( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD6_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD6_(, const, ct, m, GMOCK_MOVABLE_FUNCTION6( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD6_(, const, ct, m, GMOCK_MOVABLE_FUNCTION6( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD7_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD7_(, const, ct, m, GMOCK_MOVABLE_FUNCTION7( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD7_(, const, ct, m, GMOCK_MOVABLE_FUNCTION7( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD8_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD8_(, const, ct, m, GMOCK_MOVABLE_FUNCTION8( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD8_(, const, ct, m, GMOCK_MOVABLE_FUNCTION8( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD9_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD9_(, const, ct, m, GMOCK_MOVABLE_FUNCTION9( m, ,__VA_ARGS__), \
-        __VA_ARGS__)
+    GMOCK_METHOD9_(, const, ct, m, GMOCK_MOVABLE_FUNCTION9( m, const, \
+        __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD10_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD10_(, const, ct, m, GMOCK_MOVABLE_FUNCTION10( m, , \
+    GMOCK_METHOD10_(, const, ct, m, GMOCK_MOVABLE_FUNCTION10( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOCK_METHOD0_T_WITH_CALLTYPE(ct, m, ...) \
     GMOCK_METHOD0_(typename, , ct, m, GMOCK_NON_MOVABLE_FUNCTION0(m, \
@@ -1168,72 +1168,72 @@ using internal::FunctionMocker;
         __VA_ARGS__), __VA_ARGS__)
 
 #define MOCK_CONST_METHOD0_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD0_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION0( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD0_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION0( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD1_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD1_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION1( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD1_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION1( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD2_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD2_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION2( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD2_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION2( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD3_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD3_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION3( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD3_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION3( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD4_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD4_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION4( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD4_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION4( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD5_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD5_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION5( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD5_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION5( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD6_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD6_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION6( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD6_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION6( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD7_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD7_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION7( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD7_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION7( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD8_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD8_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION8( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD8_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION8( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD9_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD9_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION9( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD9_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION9( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 #define MOCK_CONST_METHOD10_T_WITH_CALLTYPE(ct, m, ...) \
     GMOCK_METHOD10_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION10( m, \
-        ,__VA_ARGS__), __VA_ARGS__)
+        const,__VA_ARGS__), __VA_ARGS__)
 
 #define MOVABLE_MOCK_CONST_METHOD0_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD0_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION0( m, , \
+    GMOCK_METHOD0_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION0( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD1_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD1_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION1( m, , \
+    GMOCK_METHOD1_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION1( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD2_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD2_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION2( m, , \
+    GMOCK_METHOD2_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION2( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD3_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD3_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION3( m, , \
+    GMOCK_METHOD3_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION3( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD4_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD4_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION4( m, , \
+    GMOCK_METHOD4_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION4( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD5_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD5_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION5( m, , \
+    GMOCK_METHOD5_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION5( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD6_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD6_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION6( m, , \
+    GMOCK_METHOD6_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION6( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD7_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD7_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION7( m, , \
+    GMOCK_METHOD7_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION7( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD8_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD8_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION8( m, , \
+    GMOCK_METHOD8_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION8( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD9_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD9_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION9( m, , \
+    GMOCK_METHOD9_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION9( m, const, \
         __VA_ARGS__), __VA_ARGS__)
 #define MOVABLE_MOCK_CONST_METHOD10_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD10_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION10( m, , \
-        __VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD10_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION10( m, \
+        const,__VA_ARGS__), __VA_ARGS__)
 
 
 // A MockFunction<F> class has one mock method whose type is F.  It is

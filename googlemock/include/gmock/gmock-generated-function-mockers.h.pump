@@ -201,14 +201,14 @@ $var matcher_as = [[$for j, \
 
 
 $for i [[
-#define GMOCK_NON_MOVABLE_FUNCTION$i(m, const, ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_($i, const, m)
+#define GMOCK_NON_MOVABLE_FUNCTION$i(m, ct, ...) mutable ::testing::FunctionMocker<__VA_ARGS__> GMOCK_MOCKER_($i, ct, m)
 
 ]]
 
 
 $for i [[
-#define GMOCK_MOVABLE_FUNCTION$i(m, const, ...) mutable ::testing::internal::MovableFunction< \
-    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_($i, const, m)
+#define GMOCK_MOVABLE_FUNCTION$i(m, ct, ...) mutable ::testing::internal::MovableFunction< \
+    ::testing::FunctionMocker<__VA_ARGS__> > GMOCK_MOCKER_($i, ct, m)
 
 ]]
 
@@ -224,12 +224,12 @@ $for i [[
 ]]
 
 $for i [[
-#define MOCK_CONST_METHOD$i(m, ...) GMOCK_METHOD$i[[]]_(, const, , m, GMOCK_NON_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+#define MOCK_CONST_METHOD$i(m, ...) GMOCK_METHOD$i[[]]_(, const, , m, GMOCK_NON_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
 $for i [[
-#define MOVABLE_MOCK_CONST_METHOD$i(m, ...) GMOCK_METHOD$i[[]]_(, const, , m, GMOCK_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+#define MOVABLE_MOCK_CONST_METHOD$i(m, ...) GMOCK_METHOD$i[[]]_(, const, , m, GMOCK_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
@@ -245,13 +245,13 @@ $for i [[
 
 $for i [[
 #define MOCK_CONST_METHOD$i[[]]_T(m, ...) \
-    GMOCK_METHOD$i[[]]_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(typename, const, , m, GMOCK_NON_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
 $for i [[
 #define MOVABLE_MOCK_CONST_METHOD$i[[]]_T(m, ...) \
-    GMOCK_METHOD$i[[]]_(typename, const, , m, GMOCK_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(typename, const, , m, GMOCK_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
@@ -269,13 +269,13 @@ $for i [[
 
 $for i [[
 #define MOCK_CONST_METHOD$i[[]]_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD$i[[]]_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
 $for i [[
 #define MOVABLE_MOCK_CONST_METHOD$i[[]]_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD$i[[]]_(, const, ct, m, GMOCK_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(, const, ct, m, GMOCK_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
@@ -294,14 +294,14 @@ $for i [[
 
 $for i [[
 #define MOCK_CONST_METHOD$i[[]]_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD$i[[]]_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(typename, const, ct, m, GMOCK_NON_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
 
 $for i [[
 #define MOVABLE_MOCK_CONST_METHOD$i[[]]_T_WITH_CALLTYPE(ct, m, ...) \
-    GMOCK_METHOD$i[[]]_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION$i( m, ,__VA_ARGS__), __VA_ARGS__)
+    GMOCK_METHOD$i[[]]_(typename, const, ct, m, GMOCK_MOVABLE_FUNCTION$i( m, const,__VA_ARGS__), __VA_ARGS__)
 
 ]]
 
