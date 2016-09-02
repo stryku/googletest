@@ -79,9 +79,10 @@ struct MovableFunction
         return ptr->Invoke(std::forward<Args>(args)...);
     }
 
-    auto& With()
+    template <typename ...Args>
+    auto& With(Args ...args)
     {
-        return ptr->With();
+        return ptr->With(std::forward<Args>(args)...);
     }
 
 private:
